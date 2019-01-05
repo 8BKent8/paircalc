@@ -21,10 +21,10 @@ ls2k = mx.Mx(list(range(1, 10)),        #ls2k banks per sys
                 list(range(1, 57)),     #ls2k slots per bank
                 list(range(1, 5)),      #ls2k ports per slot
                 list(range(1, 226)),    #ls2k pairs per bank
-                [225, 226,],                #ls2k no pairs
+                [225, 226, 675, 676, 1125, 1126, 1575, 1576, 2025], #ls2k no pairs
                 list(range(1, 2025)))    #ls2k total pairs
 
-#while loop will continually ask for input till you are finished calculating.
+#while loop will continually ask for input till you are finished.
 
 while True:
 
