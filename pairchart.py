@@ -35,13 +35,11 @@ while True:
     rawinput = input('Enter CCPT/Pair: ')
 # better input validation needed, breaks when mixed strings are input.
     
-    if equipment and rawinput:
-        # check for equipment and rawinput and if both are True,
+    if equipment and rawinput: # check for equipment and rawinput and if both are True,
         # split and create a string list and integer list out of rawinput.
         slist = rawinput.split('-')
         ilist = []
-        for num in slist:
-            ilist.append(int(num))
+        [ilist.append(int(num)) for num in slist:]
 
 #filter by slist length and equipment.  validate ccpt or pair with class data
 #if valid convert with funtion from class file
