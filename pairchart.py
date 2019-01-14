@@ -1,10 +1,10 @@
 import re
-import mx
+import mux
 '''calulator using separate functions for ccpt and pair calculations
     placed in class Mx.
     program starts by creating an object for each type of equipment.
 '''
-umc = mx.Mx(list(range(1, 9)),          #umc banks per sys
+umc = mux.Mux(list(range(1, 9)),          #umc banks per sys
                 list(range(1, 23)),     #umc slots per bank
                 list(range(1, 7)),      #umc ports per slot
                 list(range(1, 151)),    #umc pairs per bank
@@ -17,7 +17,7 @@ umc = mx.Mx(list(range(1, 9)),          #umc banks per sys
                 + list(range(1033, 1051))
                 + list(range(1183, 1201))), #umc no pairs
                 list(range(1, 1201)))   #umc total pairs               
-ls2k = mx.Mx(list(range(1, 10)),        #ls2k banks per sys
+ls2k = mux.Mux(list(range(1, 10)),        #ls2k banks per sys
                 list(range(1, 57)),     #ls2k slots per bank
                 list(range(1, 5)),      #ls2k ports per slot
                 list(range(1, 226)),    #ls2k pairs per bank
