@@ -3,7 +3,7 @@
  variables associated with the equipment types
 '''
 
-class Mx():
+class Mux():
     def __init__(self, banks, slots, ports, prs_per_bank, no_pair, total_prs):
         self.banks = banks
         self.slots = slots
